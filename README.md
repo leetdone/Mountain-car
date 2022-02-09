@@ -1,4 +1,7 @@
-# ECE 277 Final
+# Mountain Car
+
+Simulating an episode is done in Python so not much speedup from CUDA. The main bottleneck is the training where we update all the weights based on the episode actions and results. Training performance in CUDA is about 1000x faster than Python for 10 workers.
+
 
 ## Running
 
